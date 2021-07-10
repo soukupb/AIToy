@@ -13,8 +13,8 @@ display = drivers.Lcd()
 try:
     while True:
         # Remember that your sentences can only be 16 characters long!
-        input = input()
-        display.lcd_display_string(input, 1)               # Write line of text to first line of display
+        text = input("What do you want me to say?")
+        display.lcd_display_string(text, 1)               # Write line of text to first line of display
         sleep(2)                                           # Give time for the message to be read
         display.lcd_clear()                                # Clear the display of any data
         sleep(2)                                           # Give time for the message to be read
